@@ -10,7 +10,7 @@ This is example of implementation using [star wars api](https://swapi.co/)
 
 ## Quick start
 Several quick start:
-* Installation
+### Installation
 ```bash
 npm install
 ```
@@ -18,12 +18,13 @@ npm install
 typings install
 ```
 
-* Start as development server
+### Start as development server
 ```bash
 npm start
 ```
+and open your browser goto `http://localhost:8080/`
 
-* Generate production dist
+### Generate production dist
 ```bash
 npm run build
 ```
