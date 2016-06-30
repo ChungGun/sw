@@ -1,2 +1,29 @@
-# sw
-Star Wars API Client Example
+# Star Wars API Client 
+This is example of implementation using star wars api
+
+
+## Package we used
+* [Angular 2 with webpack](https://angular.io/docs/ts/latest/guide/webpack.html) 
+* [Spinkit](https://github.com/tobiasahlin/SpinKit)
+* [angular2-infinite-scroll](https://github.com/orizens/angular2-infinite-scroll)
+
+
+## Quick start
+Several quick start:
+* Installation
+```bash
+npm install
+```
+```bash
+typings install
+```
+
+* Start as development server
+```bash
+npm start
+```
+
+* Generate production dist
+```bash
+npm run build
+```
