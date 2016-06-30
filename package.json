@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "A Start Wars API example using Angular 2",
   "engines": {
-    "node": "4.4.4"
+    "node": "4.4.4",
+    "typings": "1.1.0"
   },
   "scripts": {
     "start": "webpack-dev-server --inline --progress --port 8080",
