@@ -1,0 +1,28 @@
+<div class="people-container">
+    <h2>Star Wars People</h2>
+    <table class="table" [ngClass]="{finish: !getHasNext()}" infinite-scroll [infiniteScrollDistance]="1" [infiniteScrollThrottle]="1500" (scrolled)="onScrollDown()">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Name</th>
+                <th>Birth Year</th>
+                <th>Gender</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let each of getPeopleList(); let i = index" (click)="goToDetailPeople(each)">
+                <td>{{i+1}}</td>
+                <td>{{each.name}}</td>
+                <td>{{each.birth_year}}</td>
+                <td>{{each.gender}}</td>
+            </tr>
+        </tbody>
+    </table>
+    <div *ngIf="getLoadingState()" class="spinner">
+        <div class="rect1"></div>
+        <div class="rect2"></div>
+        <div class="rect3"></div>
+        <div class="rect4"></div>
+        <div class="rect5"></div>
+    </div>
+</div>

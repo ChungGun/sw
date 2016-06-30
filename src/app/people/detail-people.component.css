@@ -1,0 +1,46 @@
+.detail-people-container {
+    color: #fff;
+    max-width: 800px;
+    margin: 0 auto 0 auto;
+}
+
+.detail-people-container > h2 {
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.item-container {
+    color: #cfd2da;
+    width: 100%;
+    margin-top: 20px;
+    text-align: left;
+}
+
+.people-name {
+    color: #edec51;
+    font-size: 20px;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #434857;
+}
+
+.col-left {
+    display: inline-block;
+    width: calc(50% - 12px);
+    margin-right: 20px;
+}
+
+.col-right {
+    display: inline-block;
+    width: calc(50% - 12px);
+}
+
+.info {
+    padding: 8px 8px 8px 0;
+    line-height: 1.5;
+}
+
+.label {
+    color: #fff;
+    font-size: 16px;
+}

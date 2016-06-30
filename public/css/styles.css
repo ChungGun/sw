@@ -1,0 +1,16 @@
+/* general css */
+
+body {
+    font-family: Roboto, sans-serif;
+    background-color: #151515;
+    font-size: 14px;
+}
+
+.body-container {
+    position: relative;
+    top: 110px;
+    min-height: 586px;
+    min-width: 260px;
+    max-width: 1200px;
+    margin: 0 auto;
+}

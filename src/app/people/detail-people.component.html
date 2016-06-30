@@ -1,0 +1,73 @@
+<div class="detail-people-container">
+    <h2 (click)="goToPeople()">&lt;&lt; Back to People List</h2>
+    <div class="item-container">
+        <div class="people-name">{{getSelectedPeople().name}}</div>
+        <div *ngIf="!getLoadingComplete()" class="spinner">
+            <div class="rect1"></div>
+            <div class="rect2"></div>
+            <div class="rect3"></div>
+            <div class="rect4"></div>
+            <div class="rect5"></div>
+        </div>
+        <div *ngIf="getLoadingComplete()" class="col-left">
+            <div class="info">
+                <div class="label">Birth Year</div>
+                <div class="value">{{getSelectedPeople().birth_year}}</div>
+            </div>
+            <div class="info">
+                <div class="label">Eye Color</div>
+                <div class="value">{{getSelectedPeople().eye_color}}</div>
+            </div>
+            <div class="info">
+                <div class="label">Gender</div>
+                <div class="value">{{getSelectedPeople().gender}}</div>
+            </div>
+            <div class="info">
+                <div class="label">Hair Color</div>
+                <div class="value">{{getSelectedPeople().hair_color}}</div>
+            </div>
+            <div class="info">
+                <div class="label">Height</div>
+                <div class="value">{{getSelectedPeople().height}}</div>
+            </div>
+            <div class="info">
+                <div class="label">Mass</div>
+                <div class="value">{{getSelectedPeople().mass}}</div>
+            </div>
+            <div class="info">
+                <div class="label">Skin Color</div>
+                <div class="value">{{getSelectedPeople().skin_color}}</div>
+            </div>
+        </div>
+        <div *ngIf="getLoadingComplete()" class="col-right">
+            <div class="info">
+                <div class="label">Homeworld</div>
+                <div class="value">{{getPlanet()}}</div>
+            </div>
+            <div class="info">
+                <div class="label">Films</div>
+                <div class="value">{{getFilm()}}</div>
+            </div>
+            <div class="info">
+                <div class="label">Species</div>
+                <div class="value">{{getSpecies()}}</div>
+            </div>
+            <div class="info">
+                <div class="label">Starships</div>
+                <div class="value">{{getStarship()}}</div>
+            </div>
+            <div class="info">
+                <div class="label">Vehicles</div>
+                <div class="value">{{getVehicles()}}</div>
+            </div>
+            <div class="info">
+                <div class="label">Url</div>
+                <div class="value">{{getSelectedPeople().url}}</div>
+            </div>
+            <div class="info">
+                <div class="label">Created</div>
+                <div class="value">{{getSelectedPeople().created}}</div>
+            </div>
+        </div>
+    </div>
+</div>
