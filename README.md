@@ -22,7 +22,7 @@ typings install
 ```bash
 npm start
 ```
-and open your browser goto `http://localhost:8080/`
+and open your browser go to `http://localhost:8080/`
 
 ### Generate production dist
 ```bash
